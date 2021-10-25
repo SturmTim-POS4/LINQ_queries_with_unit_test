@@ -16,5 +16,9 @@ namespace PersonDBLing
 
         public int StreetNumber { get; set; }
 
+        public override string ToString()
+        {
+            return $"{Country}";
+        }
     }
 }

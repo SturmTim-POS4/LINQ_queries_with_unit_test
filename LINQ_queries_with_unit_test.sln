@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ_queries_with_unit_test", "LINQ_queries_with_unit_test\LINQ_queries_with_unit_test.csproj", "{600D5B8B-574F-41B7-B1CF-C8C4943691DC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonDBLing", "PersonDBLing\PersonDBLing.csproj", "{FF926F23-3C52-4818-8D23-E6BE2628C421}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestPerson", "UnitTestPerson\UnitTestPerson.csproj", "{34DF19E0-5B02-4195-B203-3EFA390940FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{600D5B8B-574F-41B7-B1CF-C8C4943691DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{600D5B8B-574F-41B7-B1CF-C8C4943691DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{600D5B8B-574F-41B7-B1CF-C8C4943691DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF926F23-3C52-4818-8D23-E6BE2628C421}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF926F23-3C52-4818-8D23-E6BE2628C421}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF926F23-3C52-4818-8D23-E6BE2628C421}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF926F23-3C52-4818-8D23-E6BE2628C421}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34DF19E0-5B02-4195-B203-3EFA390940FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34DF19E0-5B02-4195-B203-3EFA390940FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34DF19E0-5B02-4195-B203-3EFA390940FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34DF19E0-5B02-4195-B203-3EFA390940FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

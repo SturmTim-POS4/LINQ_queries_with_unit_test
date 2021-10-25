@@ -29,7 +29,7 @@ namespace PersonDBLing
 
         private void InitializeAddress()
         {
-            Addresses = File.ReadAllLines(@"files\csv\csv\adresses.csv")
+            Addresses = File.ReadAllLines(@"csv\adresses.csv")
                 .Skip(1)
                 .Select(x => x.Split(","))
                 .Select(x => new Address
@@ -46,7 +46,7 @@ namespace PersonDBLing
 
         private void InitializePersons()
         {
-             Persons = File.ReadAllLines(@"files\csv\csv\persons.csv")
+             Persons = File.ReadAllLines(@"csv\persons.csv")
                  .Skip(1)
                  .Select(x => x.Split(","))
                  .Select(x => new Person
@@ -61,11 +61,5 @@ namespace PersonDBLing
                  })
                  .ToList();
         }
-
-        
-
-
-
-        
     }
 }

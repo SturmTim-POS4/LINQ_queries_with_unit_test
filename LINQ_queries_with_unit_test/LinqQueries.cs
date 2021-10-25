@@ -1,10 +1,8 @@
-using PersonDbLib;
-using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
+using PersonDBLing;
 
-namespace LinqCsvDemo
+namespace LINQ_queries_with_unit_test
 {
   public class LinqQueries
   {
@@ -17,27 +15,42 @@ namespace LinqCsvDemo
 
     public List<string> MalesStreetNrLessThan10()
     {
-      return new();
+      return db.Persons.Where(x => x.Address.StreetNumber < 10)
+        .Where(x => x.Gender.Equals("Male"))
+        .Select(x => $"{x.Lastname} {x.Firstname}")
+        .ToList();
     }
 
     public List<string> FirstnamesInChina()
     {
-      return new();
+      return db.Persons.Where(x => x.Address.Country.Equals("China"))
+        .Select(x => $"{x.Firstname}")
+        .ToList();
+
     }
 
     public int MaxStreetNrInCountry(string country)
     {
-      return -1;
+      return db.Addresses.Where(x => x.Country.Equals(country))
+        .Select(x => x.StreetNumber)
+        .Max();
     }
 
     public List<string> CountriesWithEmailEndingWithOrg()
     {
-      return new();
+      return db.Persons.Where(x => x.Mail.EndsWith(".org"))
+        .Select(x => x.Address.Country)
+        .Distinct()
+        .ToList();
     }
 
     public List<Person> PersonsFromIndonesia()
     {
-      return new();
+      return db.Persons.Where(x => x.Address.Country.Equals("Indonesia"))
+        .OrderBy(x => x.Lastname)
+        .Skip(3)
+        .Take(4)
+        .ToList();
     }
   }
 }
