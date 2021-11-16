@@ -1,5 +1,5 @@
 ﻿using LINQ_queries_with_unit_test;
-using PersonDBLing;
+using PersonDbLibEF;
 using System.Collections.Generic;
 using System.Linq;
 using FluentAssertions;
@@ -17,7 +17,7 @@ namespace UnitTestsPersonRepository
       db = new PersonContext();
       linqDemo = new LinqQueries(db);
     }
-
+    
     [Fact]
     public void T01_TestMalesStreetNrLessThan10()
     {

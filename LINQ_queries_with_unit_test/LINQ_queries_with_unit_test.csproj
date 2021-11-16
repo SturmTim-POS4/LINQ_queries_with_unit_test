@@ -7,6 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\PersonDbLibEF\PersonDbLibEF.csproj" />
       <ProjectReference Include="..\PersonDBLing\PersonDBLing.csproj" />
     </ItemGroup>
 
